@@ -1,0 +1,9 @@
+**/bin/
+**/obj/
+**/__pycache__/
+dist/
+publish/
+minecraftedu/
+*.bundle.zip
+*.base.zip
+.DS_Store

@@ -1,0 +1,67 @@
+{
+  "platform/legacy/linux/lwjgl.jar": {
+    "url": "https://libraries.minecraft.net/org/lwjgl/lwjgl/lwjgl/2.9.3/lwjgl-2.9.3.jar",
+    "sha256": "527d509f60132e5b2653c7fc0f8cf299d6f698f4a8013342bef47705dc57ed3f",
+    "size": 1053471
+  },
+  "platform/legacy/linux/lwjgl_util.jar": {
+    "url": "https://libraries.minecraft.net/org/lwjgl/lwjgl/lwjgl_util/2.9.3/lwjgl_util-2.9.3.jar",
+    "sha256": "6f4a261384e1688a3359420efce5275c8693b822a8c6eaa1e20d5cc126a51571",
+    "size": 173911
+  },
+  "platform/legacy/linux/jinput.jar": {
+    "url": "https://libraries.minecraft.net/net/java/jinput/jinput/2.0.5/jinput-2.0.5.jar",
+    "sha256": "79b5a4f5829e1a49a415711f7fb8eb5b9ad22defa72929fda2da96ec30d3f018",
+    "size": 208338
+  },
+  "platform/legacy/linux/lwjgl-natives.jar": {
+    "url": "https://libraries.minecraft.net/org/lwjgl/lwjgl/lwjgl-platform/2.9.3/lwjgl-platform-2.9.3-natives-linux.jar",
+    "sha256": "bde1c15125d668f4a1a2be996c8e4cc1b299748803fe8fe9cd367d4dfa4c052a",
+    "size": 578675
+  },
+  "platform/legacy/linux/jinput-natives.jar": {
+    "url": "https://libraries.minecraft.net/net/java/jinput/jinput-platform/2.0.5/jinput-platform-2.0.5-natives-linux.jar",
+    "sha256": "1ab4d194277816b6105253d224c8c69f1b6d720690efe7c85f3ce884f0ea273d",
+    "size": 10362
+  },
+  "platform/legacy/osx/lwjgl.jar": {
+    "url": "https://libraries.minecraft.net/org/lwjgl/lwjgl/lwjgl/2.9.3/lwjgl-2.9.3.jar",
+    "sha256": "527d509f60132e5b2653c7fc0f8cf299d6f698f4a8013342bef47705dc57ed3f",
+    "size": 1053471
+  },
+  "platform/legacy/osx/lwjgl_util.jar": {
+    "url": "https://libraries.minecraft.net/org/lwjgl/lwjgl/lwjgl_util/2.9.3/lwjgl_util-2.9.3.jar",
+    "sha256": "6f4a261384e1688a3359420efce5275c8693b822a8c6eaa1e20d5cc126a51571",
+    "size": 173911
+  },
+  "platform/legacy/osx/jinput.jar": {
+    "url": "https://libraries.minecraft.net/net/java/jinput/jinput/2.0.5/jinput-2.0.5.jar",
+    "sha256": "79b5a4f5829e1a49a415711f7fb8eb5b9ad22defa72929fda2da96ec30d3f018",
+    "size": 208338
+  },
+  "platform/legacy/osx/lwjgl-natives.jar": {
+    "url": "https://libraries.minecraft.net/org/lwjgl/lwjgl/lwjgl-platform/2.9.3/lwjgl-platform-2.9.3-natives-osx.jar",
+    "sha256": "a7e07294da3eb6f6747c2edd4cc43f8936a0aa1b8c6be5652e8bec62045619ec",
+    "size": 426817
+  },
+  "platform/legacy/osx/jinput-natives.jar": {
+    "url": "https://libraries.minecraft.net/net/java/jinput/jinput-platform/2.0.5/jinput-platform-2.0.5-natives-osx.jar",
+    "sha256": "171024b00f9a743b92388b48733dc30fd3f6d3a7da4f66f9821531fbcf1aa074",
+    "size": 12186
+  },
+  "minecraft/libraries/org/lwjgl/lwjgl/lwjgl/2.9.1-nightly-20131017/lwjgl-2.9.1-nightly-20131017.jar": {
+    "url": "https://libraries.minecraft.net/org/lwjgl/lwjgl/lwjgl/2.9.1-nightly-20131017/lwjgl-2.9.1-nightly-20131017.jar",
+    "sha256": "037ef1e28877d3b611ed502a63f12abccddc81cae013ee457bb5898d5a46e616",
+    "size": 1016818
+  },
+  "minecraft/libraries/org/lwjgl/lwjgl/lwjgl_util/2.9.1-nightly-20131017/lwjgl_util-2.9.1-nightly-20131017.jar": {
+    "url": "https://libraries.minecraft.net/org/lwjgl/lwjgl/lwjgl_util/2.9.1-nightly-20131017/lwjgl_util-2.9.1-nightly-20131017.jar",
+    "sha256": "052f1d7aeb9777663257a2f085929d1f601d29a38165633a2272cd908021ed78",
+    "size": 173887
+  },
+  "minecraft/libraries/org/lwjgl/lwjgl/lwjgl-platform/2.9.1-nightly-20131017/lwjgl-platform-2.9.1-nightly-20131017-natives-osx.jar": {
+    "url": "https://libraries.minecraft.net/org/lwjgl/lwjgl/lwjgl-platform/2.9.1-nightly-20131017/lwjgl-platform-2.9.1-nightly-20131017-natives-osx.jar",
+    "sha256": "5c64a771eac9d07fe9b7629fec177115fbaa8ab8d8cd98534708a4a67a2bcb24",
+    "size": 524201
+  }
+}
