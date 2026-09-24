@@ -12,7 +12,7 @@ eduli 1.7.10
 
 [GitHub Actions](../../actions/workflows/build.yml) builds self-contained x64 executables for Windows, Linux, and macOS on pushes to `main`, pull requests, and manual runs. Download the platform archive from a workflow run's artifacts. Users do not need .NET installed.
 
-Pushing a tag such as `v1.0.0` runs the same matrix and publishes the three archives plus SHA-256 checksums to a GitHub release after every build succeeds.
+Successful pushes and manual runs on `main` publish the three archives plus SHA-256 checksums to a GitHub release named `build-<commit>`. Pushing a version tag such as `v1.0.0` publishes under that tag instead. Rerunning the same commit updates its existing assets. Pull requests build artifacts without publishing releases.
 
 macOS builds target Intel x64. Apple Silicon requires Rosetta 2 because these historical game libraries target Intel. Linux requires a graphical desktop and the usual OpenGL/audio system libraries. Cross-platform game behavior has not yet been verified on macOS or Linux.
 

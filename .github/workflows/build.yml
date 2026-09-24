@@ -57,7 +57,7 @@ jobs:
 
   release:
     name: Publish GitHub release
-    if: startsWith(github.ref, 'refs/tags/v')
+    if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/v'))
     needs: build
     runs-on: ubuntu-24.04
     permissions:
@@ -71,12 +71,21 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
-          RELEASE_TAG: ${{ github.ref_name }}
+          SOURCE_REF: ${{ github.ref }}
+          SOURCE_NAME: ${{ github.ref_name }}
+          SOURCE_SHA: ${{ github.sha }}
         run: |
+          if [[ "$SOURCE_REF" == refs/tags/v* ]]; then
+            RELEASE_TAG="$SOURCE_NAME"
+            target_args=(--verify-tag)
+          else
+            RELEASE_TAG="build-${SOURCE_SHA:0:12}"
+            target_args=(--target "$SOURCE_SHA")
+          fi
           cd dist
           sha256sum eduli-* > SHA256SUMS.txt
           if gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
             gh release upload "$RELEASE_TAG" ./* --clobber
           else
-            gh release create "$RELEASE_TAG" ./* --verify-tag --generate-notes --title "eduli $RELEASE_TAG"
+            gh release create "$RELEASE_TAG" ./* "${target_args[@]}" --generate-notes --title "eduli $RELEASE_TAG"
           fi
